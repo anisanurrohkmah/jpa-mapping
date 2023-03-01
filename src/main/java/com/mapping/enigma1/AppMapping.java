@@ -1,15 +1,9 @@
 package com.mapping.enigma1;
 
-import com.mapping.enigma1.entity.*;
+import com.mapping.enigma1.entity.Inventory;
+import com.mapping.enigma1.entity.User;
 import com.mapping.enigma1.service.Factory;
-import com.simplejpa.*;
-import com.sun.tools.javac.Main;
 import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityTransaction;
-import jakarta.persistence.TypedQuery;
-
-import java.util.List;
-import java.util.Arrays;
 
 public class AppMapping {
     public static void main(String[] args)  {
@@ -99,7 +93,7 @@ public class AppMapping {
 
 //
         User user2= new User();
-        user2.setUserName("Fuji");
+        user2.setUserName("melati");
         user2.getInventories().add(invenss);
         invenss.getUsers().add(user2);
         em.persist(user2);

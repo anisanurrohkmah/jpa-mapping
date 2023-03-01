@@ -1,6 +1,6 @@
 package com.mapping.enigma1.entity;
 
-import com.simplejpa.Assignment;
+
 import jakarta.persistence.*;
 import org.hibernate.annotations.GenericGenerator;
 
